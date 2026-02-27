@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacoel — Web Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Custom cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- NAV -->
+    <nav id="navbar">
+        <div class="nav-inner">
+            <div class="logo">
+                <span class="logo-mark">P</span>
+                <span class="logo-text">Pacoel</span>
+            </div>
+            <ul id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#profile" class="nav-link">Profile</a></li>
+                <li><a href="#headquarters" class="nav-link">Locations</a></li>
+                <li><a href="#message" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+            <div class="grid-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                <span>Tersedia Untuk Bekerja</span>
+            </div>
+            <h1 id="welcomeText" class="hero-title">
+                <span class="title-line">Halo Kawan!,</span>
+                <span class="title-line accent">Selamat datang di</span> <span class="title-line">Pacoel</span>
+            </h1>
+            <p class="hero-sub">Kita adalah tim yang berdedikasi untuk membantu bisnis Anda mencapai results.</p>
+            <div class="hero-cta">
+                <a href="#profile" class="btn-primary">Eksplore →</a>
+                <a href="#message" class="btn-ghost">Get In Touch →</a>
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="stat">
+                <span class="stat-num">19+</span>
+                <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+                <span class="stat-num">200+</span>
+                <span class="stat-label">Projects Done</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+                <span class="stat-num">98%</span>
+                <span class="stat-label">Client Satisfaction</span>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- BANNER / IMAGE STRIP -->
+    <div class="banner-strip">
+        <div class="banner-image">
+            <div class="banner-overlay">
+                <div class="banner-number">Web Developer</div>
+                <p class="banner-caption">Membangun Besok, Hari ini!.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADQUARTERS -->
+    <section id="headquarters" class="hq-section">
+        <div class="section-header">
+            <p class="section-label">Our Presence</p>
+            <h2>Headquartered <br><em>Across Indonesia</em></h2>
+        </div>
+        <div class="hq-grid">
+            <div class="hq-card" data-city="Jakarta">
+                <div class="hq-card-inner">
+                    <div class="hq-number">01</div>
+                    <div class="hq-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                            <circle cx="12" cy="9" r="2.5"/>
+                        </svg>
+                    </div>
+                    <h3>Jakarta</h3>
+                    <p>Capital HQ & Operations Center</p>
+                    <div class="hq-tag">Main Office</div>
+                </div>
+            </div>
+            <div class="hq-card featured" data-city="Bandung">
+                <div class="hq-card-inner">
+                    <div class="hq-number">02</div>
+                    <div class="hq-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                            <circle cx="12" cy="9" r="2.5"/>
+                        </svg>
+                    </div>
+                    <h3>Bandung</h3>
+                    <p>R&D and Innovation Lab</p>
+                    <div class="hq-tag">Tech Hub</div>
+                </div>
+            </div>
+            <div class="hq-card" data-city="Surabaya">
+                <div class="hq-card-inner">
+                    <div class="hq-number">03</div>
+                    <div class="hq-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                            <circle cx="12" cy="9" r="2.5"/>
+                        </svg>
+                    </div>
+                    <h3>Surabaya</h3>
+                    <p>East Java Regional Branch</p>
+                    <div class="hq-tag">Regional</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROFILE -->
+    <section id="profile" class="profile-section">
+        <div class="profile-layout">
+            <div class="profile-left">
+                <div class="section-label">Siapakah Kami</div>
+                <h2>Crafting Digital <em>Futures</em></h2>
+                <div class="decorative-line"></div>
+                <div class="profile-visual">
+                    <div class="profile-img-wrap">
+                        <div class="profile-img-bg"></div>
+                        <div class="experience-badge">
+                            <span class="exp-num">19+</span>
+                            <span class="exp-text">Years of Excellence</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-right">
+                <div class="profile-block">
+                    <div class="block-icon">◆</div>
+                    <h3>About The Company</h3>
+                    <p>We are a leading technology company dedicated to providing innovative solutions for businesses worldwide. With over 15 years of experience, we've established ourselves as the trusted partner for digital transformation.</p>
+                </div>
+                <div class="profile-block">
+                    <div class="block-icon">◆</div>
+                    <h3>Our Vision</h3>
+                    <p>To become the most innovative and customer-centric technology company — empowering businesses to achieve their full potential through cutting-edge digital solutions.</p>
+                </div>
+                <div class="profile-block">
+                    <div class="block-icon">◆</div>
+                    <h3>Our Mission</h3>
+                    <p>Deliver world-class technology services that drive growth, enhance operational efficiency, and create lasting value. We're committed to excellence, innovation, and continuous improvement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="message" class="contact-section">
+        <div class="contact-header">
+            <p class="section-label">Say Hello</p>
+            <h2>Let's <em>Connect</em></h2>
+        </div>
+        <div class="contact-layout">
+            <div class="form-wrap">
+                <form id="contactForm" onsubmit="submitForm(event)" novalidate>
+                    <div class="input-row">
+                        <div class="form-field">
+                            <input type="text" id="name" class="field-input" placeholder=" " autocomplete="off">
+                            <label for="name" class="field-label">Your Name</label>
+                            <div class="field-line"></div>
+                            <span class="field-error" id="nameError">Name is required</span>
+                        </div>
+                        <div class="form-field">
+                            <input type="date" id="birthdate" class="field-input date-input">
+                            <label for="birthdate" class="field-label static-label">Date of Birth</label>
+                            <div class="field-line"></div>
+                            <span class="field-error" id="birthdateError">Please select your birthdate</span>
+                        </div>
+                    </div>
+
+                    <div class="form-field gender-field">
+                        <span class="field-label static-label">Gender</span>
+                        <div class="gender-options">
+                            <label class="gender-option">
+                                <input type="radio" name="gender" value="Laki-laki">
+                                <div class="gender-card">
+                                    <span class="gender-icon">♂</span>
+                                    <span>Male</span>
+                                </div>
+                            </label>
+                            <label class="gender-option">
+                                <input type="radio" name="gender" value="Perempuan">
+                                <div class="gender-card">
+                                    <span class="gender-icon">♀</span>
+                                    <span>Female</span>
+                                </div>
+                            </label>
+                        </div>
+                        <span class="field-error" id="genderError">Please select your gender</span>
+                    </div>
+
+                    <div class="form-field">
+                        <textarea id="message" class="field-input field-textarea" placeholder=" "></textarea>
+                        <label for="message" class="field-label">Your Message</label>
+                        <div class="field-line"></div>
+                        <span class="field-error" id="messageError">Message is required</span>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-arrow">→</span>
+                    </button>
+                </form>
+            </div>
+
+            <div class="result-wrap" id="resultPanel">
+                <div class="result-header">
+                    <div class="result-status">
+                        <div class="status-dot"></div>
+                        <span>Submission Preview</span>
+                    </div>
+                </div>
+                <div class="result-body">
+                    <div class="result-field">
+                        <span class="r-label">⏱ Timestamp</span>
+                        <span class="r-value" id="resultTime">—</span>
+                    </div>
+                    <div class="result-field">
+                        <span class="r-label">👤 Name</span>
+                        <span class="r-value" id="resultName">—</span>
+                    </div>
+                    <div class="result-field">
+                        <span class="r-label">📅 Birthdate</span>
+                        <span class="r-value" id="resultBirthdate">—</span>
+                    </div>
+                    <div class="result-field">
+                        <span class="r-label">⚡ Gender</span>
+                        <span class="r-value" id="resultGender">—</span>
+                    </div>
+                    <div class="result-field">
+                        <span class="r-label">💬 Message</span>
+                        <span class="r-value" id="resultMessage">—</span>
+                    </div>
+                </div>
+                <div class="result-success" id="successMsg">
+                    <div class="success-icon">✓</div>
+                    <p>Message sent successfully!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-logo">
+                <span class="logo-mark">P</span>
+                <span class="logo-text">Pacoel</span>
+            </div>
+            <p class="footer-copy">© 2025 Created by <strong>Pacoel</strong>. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#home">↑ Back to top</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
